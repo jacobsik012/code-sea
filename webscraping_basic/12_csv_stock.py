@@ -10,6 +10,7 @@ f = open(filename, "w", encoding="utf-8-sig", newline="") # 개행 없이 데이
 writer = csv.writer(f) # writer 를 이용해서 f 를 쓸 수 있음
 
 title = "N	종목명	현재가	전일비	등락률	액면가	시가총액	상장주식수	외국인비율	거래량	PER	ROE".split("\t")
+# ['N', '종목명', '현재가', ...]
 writer.writerow(title)
 
 for page in range(1, 2):
