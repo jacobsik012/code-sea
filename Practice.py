@@ -29,17 +29,7 @@ print(a)
 print(__file__) # 현재 파일의 디렉터리를 알려줌
 print(os.path.dirname(__file__)) # 현재 파일을 담고 있는 디렉터리를 알려줌
 
-balls = [
-        "A",
-    "B",
-"C"
-            ]
-print(balls)
 
-lst = ["가", "나", "다"]
-
-for lst_idx, lst_val in enumerate(lst): # lst 에 있는 값을 순회하면서, 인덱스와 그 값을 가져옴
-    print(lst_idx, lst_val)
 
 # ball_images = [
 #     pygame.image.load(os.path.join("C:/Users/매체협력부/Desktop/PythonWorkspace/pygame_project/images", "balloon1.png")),
@@ -59,18 +49,29 @@ for lst_idx, lst_val in enumerate(lst): # lst 에 있는 값을 순회하면서,
 # for f in range(floor):
 #     print("*" * (f + 1))
 
-balls = [1, 2, 3, 4]
-weapons = [11, 22, 3, 44]
+# balls = [1, 2, 3, 4]
+# weapons = [11, 22, 3, 44]
 
-for ball_idx, ball_val in enumerate(balls):
-    print("ball :", ball_val)
-    for weapon_idx, weapon_val in enumerate(weapons):
-        print("weapon :", weapon_val)
-        if ball_val == weapon_val:
-            print("공과 무기가 충돌")
-            break
+# for ball_idx, ball_val in enumerate(balls):
+#     print("ball :", ball_val)
+#     for weapon_idx, weapon_val in enumerate(weapons):
+#         print("weapon :", weapon_val)
+#         if ball_val == weapon_val:
+#             print("공과 무기가 충돌")
+#             break
 
-    else:
-           continue
-    print("바깥 for 문 break")
-    break
+#     else:
+#            continue
+#     print("바깥 for 문 break")
+#     break
+
+title = "N	종목명	현재가	전일비	등락률	액면가	시가총액	상장주식수	외국인비율	거래량	PER	ROE"
+title = title.split()
+print(title)
+
+title = "N	종목명	현재가	전일비	등락률	액면가	시가총액	상장주식수	외국인비율	거래량	PER	ROE"
+title = title.split("\t")
+print(title)
+
+title = ['가','나','다']
+print(title)
